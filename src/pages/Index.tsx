@@ -91,7 +91,7 @@ const Index = () => {
             <div className="flex flex-col items-center md:items-end gap-1.5 md:gap-2">
               <div className="flex flex-row items-center gap-1.5 md:gap-2">
                 <Button variant="outline" onClick={() => setIsChatOpen(true)} className="px-1.5 text-[10px] md:text-sm h-9" style={{ backgroundColor: settings.cor_botoes, color: settings.cor_fonte_botoes }}><MessageCircle className="h-3 w-3" /> Fale Conosco</Button>
-                {currentUser && <Button variant="outline" onClick={() => navigate("/meus-pedidos")} className="px-1.5 text-[10px] md:text-sm h-9" style={{ backgroundColor: settings.cor_botoes, color: settings.cor_fonte_botoes }}><ClipboardList className="h-3 w-3" /> Pedidos</Button>}
+                {currentUser && <Button variant="outline" onClick={() => navigate("/meus-pedidos")} className="px-1.5 text-[10px] md:text-sm h-9" style={{ backgroundColor: settings.cor_botoes, color: settings.cor_fonte_botoes }}><ClipboardList className="h-3 w-3" />Meus Pedidos</Button>}
                 <Button variant="outline" onClick={currentUser ? () => logOut() : () => navigate("/login")} className="px-1.5 text-[10px] md:text-sm h-9" style={{ backgroundColor: settings.cor_botoes, color: settings.cor_fonte_botoes }}>{currentUser ? <LogOut className="h-3 w-3" /> : <LogIn className="h-3 w-3" />} {currentUser ? "Sair" : "Entrar"}</Button>
               </div>
               {/* RESTAURADO: E-mail do usuário aparece abaixo dos botões se estiver logado */}
